@@ -1,16 +1,13 @@
 <script setup lang="ts">
-import allCats from "@/db"
+import allPrograms from "@/db"
 
 </script>
 
 <template>
-  <NuxtRouteAnnouncer />
-  <div class="max-w-3xl mx-auto bg-stone-200 my-10 px-6 py-4 text-stone-800">
-    Cats:
-    <ul>
-      <li class="list-disc  ml-8 pl-2" v-for="cat, id in allCats">
-        <NuxtLink :to="`/programs/${id}`" class="text-blue-500 hover:underline">{{ cat.name }}</NuxtLink>
-      </li>
-    </ul>
-  </div>
+  <h1 class="text-3xl font-extrabold mb-3.5">Observing Programs</h1>
+  <ul>
+    <li class="list-disc  ml-8 pl-2" v-for="program in allPrograms" :key="program.id">
+      <NuxtLink :to="`/programs/${program.id}`" class="text-sky-300 hover:underline">{{ program.name }}</NuxtLink>
+    </li>
+  </ul>
 </template>
