@@ -14,6 +14,12 @@ importers:
       '@tailwindcss/vite':
         specifier: ^4.0.12
         version: 4.0.12(vite@6.2.1(@types/node@22.13.9)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.0))
+      '@types/better-sqlite3':
+        specifier: ^7.6.12
+        version: 7.6.12
+      better-sqlite3:
+        specifier: ^11.8.1
+        version: 11.8.1
       micromark:
         specifier: ^4.0.2
         version: 4.0.2
@@ -29,6 +35,9 @@ importers:
       vue-router:
         specifier: ^4.5.0
         version: 4.5.0(vue@3.5.13(typescript@5.8.2))
+      zod:
+        specifier: ^3.24.2
+        version: 3.24.2
     devDependencies:
       typescript:
         specifier: ^5.8.2
@@ -886,6 +895,9 @@ packages:
 
   '@tybys/wasm-util@0.9.0':
     resolution: {integrity: sha512-6+7nlbMVX/PVDCwaIQ8nTOPveOcFLSt8GcXdx8hD0bt39uWxYT88uXzqTd4fTvqta7oeUJqudepapKNt2DYJFw==}
+
+  '@types/better-sqlite3@7.6.12':
+    resolution: {integrity: sha512-fnQmj8lELIj7BSrZQAdBMHEHX8OZLYIHXqAKT1O7tDfLxaINzf00PMjw22r3N/xXh0w/sGHlO6SVaCQ2mj78lg==}
 
   '@types/debug@4.1.12':
     resolution: {integrity: sha512-vIChWdVG3LG1SMxEvI/AK+FWJthlrqlTu7fbrlywTkkaONwk/UAGaULXRlf8vkzFBLVm0zkMdCquhL5aOjhXPQ==}
@@ -3344,6 +3356,9 @@ packages:
     resolution: {integrity: sha512-zK7YHHz4ZXpW89AHXUPbQVGKI7uvkd3hzusTdotCg1UxyaVtg0zFJSTfW/Dq5f7OBBVnq6cZIaC8Ti4hb6dtCA==}
     engines: {node: '>= 14'}
 
+  zod@3.24.2:
+    resolution: {integrity: sha512-lY7CDW43ECgW9u1TcT3IoXHflywfVqDYze4waEz812jR/bZ8FHDsl7pFQoSZTz5N+2NqRXs8GBwnAwo3ZNxqhQ==}
+
 snapshots:
 
   '@ampproject/remapping@2.3.0':
@@ -4251,6 +4266,10 @@ snapshots:
       tslib: 2.8.1
     optional: true
 
+  '@types/better-sqlite3@7.6.12':
+    dependencies:
+      '@types/node': 22.13.9
+
   '@types/debug@4.1.12':
     dependencies:
       '@types/ms': 2.1.0
@@ -4557,7 +4576,6 @@ snapshots:
     dependencies:
       bindings: 1.5.0
       prebuild-install: 7.1.3
-    optional: true
 
   bindings@1.5.0:
     dependencies:
@@ -4572,7 +4590,6 @@ snapshots:
       buffer: 5.7.1
       inherits: 2.0.4
       readable-stream: 3.6.2
-    optional: true
 
   boolbase@1.0.0: {}
 
@@ -4599,7 +4616,6 @@ snapshots:
     dependencies:
       base64-js: 1.5.1
       ieee754: 1.2.1
-    optional: true
 
   buffer@6.0.3:
     dependencies:
@@ -4646,8 +4662,7 @@ snapshots:
     dependencies:
       readdirp: 4.1.2
 
-  chownr@1.1.4:
-    optional: true
+  chownr@1.1.4: {}
 
   chownr@3.0.0: {}
 
@@ -4833,10 +4848,8 @@ snapshots:
   decompress-response@6.0.0:
     dependencies:
       mimic-response: 3.1.0
-    optional: true
 
-  deep-extend@0.6.0:
-    optional: true
+  deep-extend@0.6.0: {}
 
   deepmerge@4.3.1: {}
 
@@ -4918,7 +4931,6 @@ snapshots:
   end-of-stream@1.4.4:
     dependencies:
       once: 1.4.0
-    optional: true
 
   enhanced-resolve@5.18.1:
     dependencies:
@@ -5006,8 +5018,7 @@ snapshots:
       strip-final-newline: 4.0.0
       yoctocolors: 2.1.1
 
-  expand-template@2.0.3:
-    optional: true
+  expand-template@2.0.3: {}
 
   exsolve@1.0.2: {}
 
@@ -5059,8 +5070,7 @@ snapshots:
 
   fresh@0.5.2: {}
 
-  fs-constants@1.0.0:
-    optional: true
+  fs-constants@1.0.0: {}
 
   fs-extra@11.3.0:
     dependencies:
@@ -5108,8 +5118,7 @@ snapshots:
     dependencies:
       git-up: 8.0.1
 
-  github-from-package@0.0.0:
-    optional: true
+  github-from-package@0.0.0: {}
 
   glob-parent@5.1.2:
     dependencies:
@@ -5601,8 +5610,7 @@ snapshots:
 
   mimic-fn@4.0.0: {}
 
-  mimic-response@3.1.0:
-    optional: true
+  mimic-response@3.1.0: {}
 
   minimatch@5.1.6:
     dependencies:
@@ -5612,8 +5620,7 @@ snapshots:
     dependencies:
       brace-expansion: 2.0.1
 
-  minimist@1.2.8:
-    optional: true
+  minimist@1.2.8: {}
 
   minipass@7.1.2: {}
 
@@ -5624,8 +5631,7 @@ snapshots:
 
   mitt@3.0.1: {}
 
-  mkdirp-classic@0.5.3:
-    optional: true
+  mkdirp-classic@0.5.3: {}
 
   mkdirp@3.0.1: {}
 
@@ -5650,8 +5656,7 @@ snapshots:
 
   nanotar@0.2.0: {}
 
-  napi-build-utils@2.0.0:
-    optional: true
+  napi-build-utils@2.0.0: {}
 
   nitropack@2.11.5(better-sqlite3@11.8.1)(typescript@5.8.2):
     dependencies:
@@ -5760,7 +5765,6 @@ snapshots:
   node-abi@3.74.0:
     dependencies:
       semver: 7.7.1
-    optional: true
 
   node-addon-api@7.1.1: {}
 
@@ -5945,7 +5949,6 @@ snapshots:
   once@1.4.0:
     dependencies:
       wrappy: 1.0.2
-    optional: true
 
   onetime@6.0.0:
     dependencies:
@@ -6246,7 +6249,6 @@ snapshots:
       simple-get: 4.0.1
       tar-fs: 2.1.2
       tunnel-agent: 0.6.0
-    optional: true
 
   pretty-bytes@6.1.1: {}
 
@@ -6269,7 +6271,6 @@ snapshots:
     dependencies:
       end-of-stream: 1.4.4
       once: 1.4.0
-    optional: true
 
   quansync@0.2.8: {}
 
@@ -6294,7 +6295,6 @@ snapshots:
       ini: 1.3.8
       minimist: 1.2.8
       strip-json-comments: 2.0.1
-    optional: true
 
   readable-stream@2.3.8:
     dependencies:
@@ -6311,7 +6311,6 @@ snapshots:
       inherits: 2.0.4
       string_decoder: 1.3.0
       util-deprecate: 1.0.2
-    optional: true
 
   readable-stream@4.7.0:
     dependencies:
@@ -6450,15 +6449,13 @@ snapshots:
 
   signal-exit@4.1.0: {}
 
-  simple-concat@1.0.1:
-    optional: true
+  simple-concat@1.0.1: {}
 
   simple-get@4.0.1:
     dependencies:
       decompress-response: 6.0.0
       once: 1.4.0
       simple-concat: 1.0.1
-    optional: true
 
   simple-git@3.27.0:
     dependencies:
@@ -6538,8 +6535,7 @@ snapshots:
 
   strip-final-newline@4.0.0: {}
 
-  strip-json-comments@2.0.1:
-    optional: true
+  strip-json-comments@2.0.1: {}
 
   strip-literal@3.0.0:
     dependencies:
@@ -6585,7 +6581,6 @@ snapshots:
       mkdirp-classic: 0.5.3
       pump: 3.0.2
       tar-stream: 2.2.0
-    optional: true
 
   tar-stream@2.2.0:
     dependencies:
@@ -6594,7 +6589,6 @@ snapshots:
       fs-constants: 1.0.0
       inherits: 2.0.4
       readable-stream: 3.6.2
-    optional: true
 
   tar-stream@3.1.7:
     dependencies:
@@ -6647,7 +6641,6 @@ snapshots:
   tunnel-agent@0.6.0:
     dependencies:
       safe-buffer: 5.2.1
-    optional: true
 
   type-fest@4.37.0: {}
 
@@ -6945,8 +6938,7 @@ snapshots:
       string-width: 5.1.2
       strip-ansi: 7.1.0
 
-  wrappy@1.0.2:
-    optional: true
+  wrappy@1.0.2: {}
 
   ws@8.18.1: {}
 
@@ -6991,3 +6983,5 @@ snapshots:
       archiver-utils: 5.0.2
       compress-commons: 6.0.2
       readable-stream: 4.7.0
+
+  zod@3.24.2: {}
