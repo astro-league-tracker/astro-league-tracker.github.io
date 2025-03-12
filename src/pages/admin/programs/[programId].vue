@@ -1,3 +1,5 @@
 <template>
-    hello {{ $route.params.programId }}
+    <div>
+        hello {{ $route.params.programId }}
+    </div>
 </template>

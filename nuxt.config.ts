@@ -2,21 +2,25 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  compatibilityDate: "2024-11-01",
-  css: ['@/assets/styles.css'],
-  devtools: { enabled: true },
-  nitro: {
-    prerender: {
-      ignore: [/^\/admin\/.*/]
-    }
-  },
-  srcDir: "src/",
-  typescript: {
-    typeCheck: true,
-  },
-  vite: {
-    plugins: [
-      tailwindcss(),
-    ],
-  },
+    modules: ["@nuxt/eslint"],
+    devtools: { enabled: true },
+    css: ["@/assets/styles.css"],
+    srcDir: "src/",
+    compatibilityDate: "2024-11-01",
+
+    nitro: {
+        prerender: {
+            ignore: [/^\/admin\/.*/],
+        },
+    },
+
+    vite: {
+        plugins: [
+            tailwindcss(),
+        ],
+    },
+
+    typescript: {
+        typeCheck: true,
+    },
 });
