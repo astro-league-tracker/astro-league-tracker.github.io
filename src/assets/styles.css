@@ -1,6 +1,2 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
-
-:root {
-    @apply bg-slate-900;
-}
