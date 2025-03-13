@@ -1,5 +1,5 @@
 <template>
-    <div class="min-h-screen min-w-screen bg-slate-950 pt-24 antialiased">
+    <div class="min-h-screen min-w-screen bg-slate-950 pt-8 antialiased">
         <div
             class="fixed right-0 bottom-[-30vh] left-0 z-10 h-[40vh] bg-linear-45 from-indigo-800 via-purple-800 to-pink-950 blur-[20vh]"
         />
