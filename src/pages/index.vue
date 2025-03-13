@@ -9,13 +9,15 @@ import allPrograms from "@/db";
             <li
                 v-for="program in allPrograms"
                 :key="program.id"
-                class="ml-8 list-disc pl-2"
+                class="ml-8 flex items-center gap-2 pl-2"
             >
+                <PersistentCheckbox :name="`program${program.id}`" />
                 <NuxtLink
                     :to="`/programs/${program.id}`"
                     class="text-sky-300 hover:underline"
-                    >{{ program.name }}</NuxtLink
                 >
+                    {{ program.name }}
+                </NuxtLink>
             </li>
         </ul>
     </div>
