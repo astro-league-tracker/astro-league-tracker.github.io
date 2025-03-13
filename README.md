@@ -1,23 +1,37 @@
 # astro-league-tracker.github.io
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+An app to track your progress towards observer awards in the [astronomical league](https://www.astroleague.org/).
+
+Built with Nuxt. Check out the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction).
+
+## Project Overview
+
+The app is intended to be hosted as a static site using github pages, but content is stored in a Sqlite database in order to create relationships between projects. The Observer program requires a number of other programs to be completed, for example.
+
+Since this is a static site, the database is not available in production, nor are any server routes. Any frontend routes starting with `/admin` are also removed in production. These pages are intended to make adding content easier.
+
+The sqlite database is checked in to the code and will be used to generate a JSON file which production will use to display content.
+
+Progress is displayed in the form of checkboxes next to project links and their state is saved in the browser's local storage.
 
 ## Setup
+
+[pnpm](https://pnpm.io/) is needed for package management and running scripts.
+[sqlite3](https://sqlite.org/) is recommended to interact with the database.
+All of the above can be installed with [brew](https://brew.sh/).
+
+This project was built using Node v22 which can also be installed with brew or you can use [nvm](https://github.com/nvm-sh/nvm).
 
 Make sure to install dependencies:
 
 ```bash
-# npm
-npm install
-
-# pnpm
 pnpm install
+```
 
-# yarn
-yarn install
+Automatically fix and format:
 
-# bun
-bun install
+```bash
+pnpm lint:fix
 ```
 
 ## Development Server
@@ -25,51 +39,32 @@ bun install
 Start the development server on `http://localhost:3000`:
 
 ```bash
-# npm
-npm run dev
-
-# pnpm
 pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
 ## Production
 
+Most of the time, you shouldn't need to run the following since it is handled by a github action. However, this can be helpful to help debug.
+See `.github/workflows/deploy.yaml`
+
 Build the application for production:
 
 ```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
+pnpm nuxt build --preset github_pages
 ```
 
 Locally preview production build:
 
 ```bash
-# npm
-npm run preview
-
-# pnpm
 pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## Formatting and Linting
+
+eslint and prettier are used to ensure code style and best practices. There aren't currently pre-commit hooks or github actions set up to enforce this, so the scripts may need to be run in the mean time.
+
+Just lint:
+
+```bash
+pnpm lint
+```
