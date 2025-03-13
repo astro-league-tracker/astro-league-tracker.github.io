@@ -1,0 +1,30 @@
+[
+  [
+    {
+      "id": 1,
+      "name": "Messier Observing Program",
+      "content": "## Introduction\\nAlmost every amateur astronomer begins to be aware of the Messier Catalog as soon as he or she opens their first book. The novice is sure to find some spectacular object pictured and designated by its “Messier Number” with the universal abbreviation “M”. Of the myriads of star clusters and nebulae scattered over the sky only about 100 (perhaps 110 at most) can claim membership to this celebrated list. However, this happens to include most, but not quite all, of the finest of these objects observable from mid-northern latitudes.\\nThere is nothing in the catalog that the owner of so humble an instrument as a three-inch reflector cannot reach under good observing conditions. Many of the objects can be seen with binoculars and some with the naked eye. Thus, the Messier Catalog is a happy hunting ground for any amateur with a taste for deep-sky objects.\\nEven an extremely brief review of the history of Messier’s Catalog will explain why it contains so many bright and easy clusters and nebulae.",
+      "url": "https://www.astroleague.org/messier-observing-program/"
+    },
+    {
+      "id": 2,
+      "name": "Constellation Hunter Observing Program",
+      "content": "## Introduction\\nWelcome to the Astronomical League’s Constellation Hunter Observing Program. The Constellation Hunter Observing Program has two certifications and pins: The Northern Skies and the Southern Skies. The purpose of these programs is to provide an orientation to the sky for novice astronomers. They require no special equipment (other than a planisphere and a reference for the brighter star names), and no prior knowledge. The objective is to provide a forum for the novice observer to become more familiar with the constellations and brighter stars, to begin to learn to navigate among the stars and to provide a solid foundation for moving on to other observation programs such as the Messier Observing Program.",
+      "url": "https://www.astroleague.org/constellation-hunter-observing-program/"
+    }
+  ],
+  [
+    {
+      "id": 3,
+      "name": "Galileo Observing Program",
+      "content": "## Introduction\n\nWelcome to the Astronomical League’s Galileo Observing Program. The purpose of this Observing Program is to experience the thrill that Galileo had when he was the first person to turn a telescope towards the sky. You will make observations like those that caused such a great uproar throughout Europe as you find evidence that shows that the Ptolemaic model of the Universe (geocentric) was wrong and that Copernicus might be right (heliocentric), and that Aristotle may not have been right either…\n\nAt the time of Galileo, the Universe was generally believed to be as Aristotle and Ptolemy envisioned it. The Earth was the center and everything revolved around us. Copernicus had proposed the idea that the planets all orbit the sun about 100 years earlier, but his solution was inaccurate when predicting the future behaviors of the planets. Aristotle’s premise was that the heavens were made of a fifth, “divine element” and that: “The universe is uncompounded, ungenerated, eternal, unalterable, and neither heavy nor light.” This implies that things are perfect in space (the Moon and beyond). So objects are spheres and travel in circles. They are flawless and have no detailed features.\n\nPicture yourself as Galileo Galilei. It is the turn of the century; the 17th century! It is the early 1600’s and you are a scientist and mathematician. You see your role to help determine how the universe works. You are not happy with the scientific philosophers who use logic to prove their theories. You believe in experimentation and observation, and you have a brand new tool, a telescope (which incidentally you made yourself). It is June of 1609 and it is only 3-power, but you quickly follow that with one of 8-power and then another with 20-power in October.  So much to see, that nobody has seen before.",
+      "url": "https://www.astroleague.org/galileo-observing-program/"
+    },
+    {
+      "id": 4,
+      "name": "THIS IS A TEST",
+      "content": "Hello World",
+      "url": "https://foo.bar/"
+    }
+  ]
+]
