@@ -16,9 +16,11 @@ Progress is displayed in the form of checkboxes next to project links and their 
 
 ## Setup
 
-[pnpm](https://pnpm.io/) is needed for package management and running scripts.
-[sqlite3](https://sqlite.org/) is recommended to interact with the database.
-All of the above can be installed with [brew](https://brew.sh/).
+tools:
+
+- [pnpm](https://pnpm.io/) is needed for package management and running scripts.
+- [sqlite3](https://sqlite.org/) is recommended to interact with the database.
+- [brew](https://brew.sh/) can be used to install the above on MacOS.
 
 This project was built using Node v22 which can also be installed with brew or you can use [nvm](https://github.com/nvm-sh/nvm).
 
@@ -26,12 +28,6 @@ Make sure to install dependencies:
 
 ```bash
 pnpm install
-```
-
-Automatically fix and format:
-
-```bash
-pnpm lint:fix
 ```
 
 ## Development Server
@@ -67,4 +63,10 @@ Just lint:
 
 ```bash
 pnpm lint
+```
+
+Automatically fix and format:
+
+```bash
+pnpm lint:fix
 ```
