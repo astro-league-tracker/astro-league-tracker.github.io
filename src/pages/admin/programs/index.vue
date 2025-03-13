@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { Program } from "@/db";
+import type { Program } from "~/composables/usePrograms";
 
 const { data: programs } = useAsyncData<Program[]>(async () => {
     try {

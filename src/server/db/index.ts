@@ -15,3 +15,7 @@ export const getDb = () => {
 export const createProgram = getDb().prepare(
     "INSERT INTO programs (name, content, url) VALUES (@name, @content, @url) RETURNING *",
 );
+
+export const getAllPrograms = getDb().prepare(
+    "SELECT * FROM programs ORDER BY name ASC",
+);

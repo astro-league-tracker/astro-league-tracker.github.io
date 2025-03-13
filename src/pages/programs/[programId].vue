@@ -1,13 +1,11 @@
 <script setup lang="ts">
 import { micromark } from "micromark";
 
-import allPrograms from "@/db";
+const { getSingleProgram } = usePrograms();
 
 const route = useRoute();
 const program = computed(() =>
-    allPrograms.find(
-        (program) => program.id === Number(route.params.programId),
-    ),
+    getSingleProgram(Number(route.params.programId)),
 );
 </script>
 

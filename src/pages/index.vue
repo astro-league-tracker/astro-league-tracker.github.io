@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import allPrograms from "@/db";
+const { allPrograms } = usePrograms();
 </script>
 
 <template>
