@@ -1,3 +1,3 @@
 <template>
-    <div>hello {{ $route.params.programId }}</div>
+    <div>Not implemented yet. Program ID: {{ $route.params.programId }}</div>
 </template>
